@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Header */
+        header{
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2{
+            margin: 0;
+            color: red;
+            cursor: pointer;
+        }
+
+        header h2 span{
+            color: #fff;
+        }
+
+        .nav a{
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .nav a:hover{
+            color: #ffb5b5;
+        }
+
+        /* Main Content */
+        main{
+            padding: 20px;
+            justify-items: center;
+        }
+
+        /* Intro */
+        .intro{
+            background-color: #111;
+            padding: 20px;
+            width: 80%;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .intro img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            justify-content: center;
+            padding-left: 10%;
+        }
+
+        .intro-text{
+            padding-left: 10%;
+            text-align: center;
+        }
+
+        .intro h2{
+            margin: 2px;
+            color: #ffb5b5;
+            font-size: 4rem;
+        }
+
+        .intro p{
+            margin: 3px;
+            color: #bbb;
+            font-size: 1.5rem;
+        }
+
+        .intro button{
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 200px;
+            height: 50px;
+            font-size: 1.3rem;
+        }
+
+        .intro button:hover{
+            background-color: #ffb5b5;
+            color: #000;
+        }
+        
+        /* About */
+        .about{
+            margin: 10%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        .about h2{
+            color: #ffb5b5;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .about p{
+            color: #eee;
+            line-height: 1.5;
+        }
+
+        .about h3{
+            color: #ffb5b5;
+            cursor: pointer;
+        }
+
+        .about ul{
+            color: #eee;
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+
+        .about ul li span{
+            color: #ffb5b5;
+            font-weight: bold;
+            text-decoration: underline 1px #fff;
+            text-underline-offset: 2px;
+            cursor: pointer;
+        }
+
+        /* Projects */
+        .projects{
+            margin: 10%;
+        }
+
+        .projects h2{
+            color: #ffb5b5;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .projects p{
+            color: #eee;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            border-left: 4px solid #ffb5b5;
+            transition: transform 0.3s;
+            justify-items: center;
+            padding-bottom: 20px;
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+
+        .project-card img {
+            width: 100%;
+            aspect-ratio: 4 / 2;
+            object-fit: cover;
+            border-bottom: 2px solid #ffb5b5;
+        }
+
+        .project-card h3 {
+            margin: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .project-card p {
+            margin: 0 1rem 1rem;
+            color: #ccc;
+        }
+
+        .project-card .view-project{
+            color: #fff;
+            text-decoration: none;
+            background: #333;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .project-card .view-project:hover {
+            background: #ffb5b5;
+            color: #000;
+        }
+
+        /* Contact */
+        .contact{
+            margin: 10%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        .contact h2{
+            color: #ffb5b5;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .contact p{
+            color: #eee;
+            line-height: 1.5;
+        }
+
+        .contact ul li span{
+            color: #ffb5b5;
+            font-weight: bold;
+            text-decoration: underline 1px #fff;
+            text-underline-offset: 2px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer{
+            background-color: #111;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p{
+            margin: 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Tron <span>Softech</span></h2>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-img">
+                <img src="./Img/me.jpg" alt="profile-pic">
+            </div>
+            <div class="intro-text">
+                <h2>Hi, I'm Nitish Kumar Singh</h2>
+                <p>Technologist | Developer | AI Enthusiast</p>
+                <button name="button" onclick="window.location.href='#about'">Explore</button>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Nitish Kumar Singh, a passionate developer, designer, and technology enthusiast with a foundation in both computer science and business applications. I completed my BBA in Computer Applications from Savitribai Phule Pune University and am currently pursuing my MCA from Ajeenkya D Y Patil University, School of Engineering.
+                I enjoy building modern web solutions and applications that solve real-world problems. My interest spans across full-stack development, AI/ML, cybersecurity, and crafting meaningful UI/UX experiences. I'm also a content creator on YouTube, where I share tutorials and projects to help the developer community grow.
+                With strong communication skills, leadership experience, and a creative mindset, I’m always eager to collaborate, innovate, and contribute to impactful tech initiatives.
+            </p>
+
+            <h3>🏅 Honors & Awards</h3>
+            <p>
+                <ul>
+                    <li>Winner - HackVerse Hackathon (2025) – Built a Smart Gamified Learning Management System.</li>
+                    <li>Cybersecurity Certification – Successfully completed OHSC Cybersecurity Course.</li>
+                    <li>Top Tech Creator – Recognized for consistent educational content on YouTube.</li>
+                </ul>
+            </p>
+
+            <h3>🤝 Volunteering & Involvement</h3>
+            <p>
+                <ul>
+                    <li>YouTube Channel Manager – Tutorials and walkthroughs to 1,000+ learners.</li>
+                    <li>Tech Community Mentor – Helping peers in coding, project building, and AI fundamentals.</li>
+                    <li>Campus Representative – Coordinated tech events and Hackathon.</li>
+                </ul>
+            </p>
+
+            <h3>💻 Skills</h3>
+            <p>
+                <ul>
+                    <li><span>Frontend Development:</span> HTML5, CSS3, JavaScript, React.js, Bootstrap, Tailwind CSS, Canva</li>
+                    <li><span>Backend Development:</span> Node.js, Express, RESTful APIs</li>
+                    <li><span>Programming & CS Fundamentals:</span> C, C++, Python, Data Structures & Algorithms, Software Testing, OOPs Principles</li>
+                    <li><span>Database Technologies:</span> MySQL, MongoDB, Firebase, DBMS Concepts</li>
+                    <li><span>AI & Machine Learning:</span> AI & ML Basics, Pandas & NumPy, Scikit-Learn</li>
+                    <li><span>Tools & Platform:</span> Visual Studio Code, Git & GitHub, Figma, Android Studio, MS Office</li>
+                    <li><span>Cybersecurity:</span> CyberSecurity Fundamentals</li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+
+            <div class="project-list">
+                <div class="project-card">
+                    <img src="Img/NetFlix Clone.png" alt="Netflix Clone">
+                    <h3>Netflix Clone</h3>
+                    <p>A visually engaging frontend replica of Netflix using HTML, CSS, and JavaScript with responsive UI design.</p>
+                    <a href="https://netflix-clone-website-neon.vercel.app/" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/weather application.png" alt="Weather Application">
+                    <h3>Weather Application</h3>
+                    <p>Displays real-time weather using APIs and JavaScript. Shows temperature, conditions, and location-based info.</p>
+                    <a href="https://weather-application-three-kappa.vercel.app/" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/Recipe Book.png" alt="Recipe Book">
+                    <h3>Recipe Book</h3>
+                    <p>Frontend-only catalog using HTML, CSS, and JavaScript, showcasing recipes with clean layout and user-friendly interface.</p>
+                    <a href="#" onclick="openModal()" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/banking system.png" alt="Banking Management System">
+                    <h3>Banking Management System</h3>
+                    <p>A secure web-based banking app with user login, transaction records, and MySQL integration.</p>
+                    <a href="#" onclick="openModal()" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/pet management system.png" alt="Pet Management System">
+                    <h3>Pet Shop Management System</h3>
+                    <p>Manage pet data, services, and registration with full-stack Node.js and MySQL integration.</p>
+                    <a href="#" onclick="openModal()" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/ayurveda mentor.png" alt="Ayurveda Mentor System">
+                    <h3>Ayurveda Mentor System</h3>
+                    <p>Shop Ayurvedic products, get tips and consultations using a full-stack implementation.</p>
+                    <a href="#" onclick="openModal()" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/rentoring system.png" alt="Rentoring Management System">
+                    <h3>Rentoring Management System</h3>
+                    <p>Manage rental services, availability, and bookings with full-stack development using Node.js and MySQL.</p>
+                    <a href="#" onclick="openModal()" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/ping pong game.png" alt="Ping Pong Game">
+                    <h3>Ping Pong Game</h3>
+                    <p>Classic ping pong game built with HTML, CSS & JavaScript. Includes scoring and paddle movement logic.</p>
+                    <a href="https://ping-pong-game-three-zeta.vercel.app/" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/grivence system.png" alt="Grievance Management System">
+                    <h3>Grievance Management System</h3>
+                    <p>Student grievance portal for submitting and resolving issues with email authentication.</p>
+                    <a href="#" onclick="openModal()" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/eric-learn.png" alt="ERIC Learn">
+                    <h3>ERIC Learn</h3>
+                    <p>AI-powered education tool with modules like Text, Visual, Audio, and Quiz AI using OpenAI API.</p>
+                    <a href="https://eric-learn.vercel.app/index.html" class="view-project">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="Img/gaming learning management system.png" alt="Gaming Learning Management System">
+                    <h3>Gaming Learning Management System</h3>
+                    <p>Gamified LMS platform enabling teachers and students to interact through challenges and learning modules.</p>
+                    <a href="#" onclick="openModal()" class="view-project">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>
+                <ul>
+                    <li><span>Email:</span> nitishkumarsingh123@gmail.com</li>
+                    <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/nitishkumarsingh123/" target="_blank">https://www.linkedin.com/in/nitishkumarsingh123/</a></li>
+                    <li><span>GitHub:</span> <a href="https://github.com/nitishkumarsingh123" target="_blank">https://github.com/nitishkumarsingh123</a></li>
+                </ul>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nitish Kumar Singh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal() {
+            alert("Project details will be available soon. Stay tuned!");
+        }
+    </script>
+</body>
+</html>
