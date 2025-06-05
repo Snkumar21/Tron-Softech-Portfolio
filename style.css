@@ -101,7 +101,7 @@ main{
     color: #000;
 }
 
-/* About */
+/* About Section */
 .about{
     margin: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -139,7 +139,7 @@ main{
     cursor: pointer;
 }
 
-/* Featured Projects */
+/* Featured Section */
 .featured {
     margin: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -228,7 +228,7 @@ main{
     text-decoration: none;
 }
 
-/* Skill-Set Section*/
+/* Skill Section*/
 .skills {
     margin: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -306,7 +306,7 @@ main{
     transform: scale(1.05);
 }
 
-/* Projects */
+/* Projects Section*/
 .projects{
     margin: 10%;
 }
@@ -375,7 +375,7 @@ main{
     color: #000;
 }
 
-/* Contact */
+/* Contact Section */
 .contact{
     margin: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
