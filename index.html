@@ -3,303 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-        }
-
-        /* Header */
-        header{
-            background-color: #333;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h2{
-            margin: 0;
-            color: red;
-            cursor: pointer;
-        }
-
-        header h2 span{
-            color: #fff;
-        }
-
-        .nav a{
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .nav a:hover{
-            color: #ffb5b5;
-        }
-
-        /* Main Content */
-        main{
-            padding: 20px;
-            justify-items: center;
-        }
-
-        /* Intro */
-        .intro{
-            background-color: #111;
-            padding: 20px;
-            width: 80%;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .intro img{
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            justify-content: center;
-            padding-left: 10%;
-        }
-
-        .intro-text{
-            padding-left: 10%;
-            text-align: center;
-        }
-
-        .intro h2{
-            margin: 2px;
-            color: #ffb5b5;
-            font-size: 4rem;
-        }
-
-        .intro p{
-            margin: 3px;
-            color: #bbb;
-            font-size: 1.5rem;
-        }
-
-        .intro button{
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 10px;
-            width: 200px;
-            height: 50px;
-            font-size: 1.3rem;
-        }
-
-        .intro button:hover{
-            background-color: #ffb5b5;
-            color: #000;
-        }
-        
-        /* About */
-        .about{
-            margin: 10%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: justify;
-        }
-
-        .about h2{
-            color: #ffb5b5;
-            text-align: center;
-            font-size: 3rem;
-        }
-
-        .about p{
-            color: #eee;
-            line-height: 1.5;
-        }
-
-        .about h3{
-            color: #ffb5b5;
-            cursor: pointer;
-        }
-
-        .about ul{
-            color: #eee;
-            list-style-type: circle;
-            list-style-position: inside;
-        }
-
-        .about ul li span{
-            color: #ffb5b5;
-            font-weight: bold;
-            text-decoration: underline 1px #fff;
-            text-underline-offset: 2px;
-            cursor: pointer;
-        }
-
-        /* Projects */
-        .projects{
-            margin: 10%;
-        }
-
-        .projects h2{
-            color: #ffb5b5;
-            text-align: center;
-            font-size: 3rem;
-        }
-
-        .projects p{
-            color: #eee;
-            line-height: 1.5;
-            text-align: justify;
-        }
-
-        .project-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .project-card {
-            background: #1a1a1a;
-            border-radius: 10px;
-            overflow: hidden;
-            border-left: 4px solid #ffb5b5;
-            transition: transform 0.3s;
-            justify-items: center;
-            padding-bottom: 20px;
-        }
-
-        .project-card:hover {
-            transform: scale(1.03);
-        }
-
-        .project-card img {
-            width: 100%;
-            aspect-ratio: 4 / 2;
-            object-fit: cover;
-            border-bottom: 2px solid #ffb5b5;
-        }
-
-        .project-card h3 {
-            margin: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .project-card p {
-            margin: 0 1rem 1rem;
-            color: #ccc;
-        }
-
-        .project-card .view-project{
-            color: #fff;
-            text-decoration: none;
-            background: #333;
-            padding: 10px;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
-        .project-card .view-project:hover {
-            background: #ffb5b5;
-            color: #000;
-        }
-
-        /* Contact */
-        .contact{
-            margin: 10%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            align-items: center;
-        }
-
-        .contact-div{
-            display: flex;
-            flex-direction: row;
-            background-color: #111;
-            border-radius: 10px;
-            padding: 40px;
-            width: 120%;
-            margin-left: -15%;
-            margin-top: 10%;
-            align-items: center;
-        }
-
-        .contact-form{
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            margin: 0 auto;
-        }
-
-        .contact-form label{
-            color: #fff;
-            margin: 10px 0;
-            text-align: left;
-        }
-
-        .contact-form input,
-        .contact-form textarea{
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 5px 0;
-            font-size: 16px;
-        }
-
-        .contact-form button{
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 1.3rem;
-            width: 200px;
-            height: 50px;
-            margin-left: 30%;
-            margin-top: 10%;
-        }
-
-        .contact-form button:hover{
-            background-color: #ffb5b5;
-            color: #000;
-        }
-
-        .contact h2{
-            color: #ffb5b5;
-            text-align: center;
-            font-size: 3rem;
-        }
-
-        .contact p{
-            color: #eee;
-            line-height: 1.5;
-        }
-
-        .contact ul li span{
-            color: #ffb5b5;
-            font-weight: bold;
-            text-decoration: underline 1px #fff;
-            text-underline-offset: 2px;
-            cursor: pointer;
-        }
-
-        /* Footer */
-        footer{
-            background-color: #111;
-            padding: 10px;
-            text-align: center;
-        }
-
-        footer p{
-            margin: 0;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -449,27 +155,39 @@
 
         <section class="contact" id="contact">
             <h2>Contact</h2>
-            <div class="contact-div">
-                <form action="" method="post" class="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            
+            <div class="contact-content">
+                <!-- Left: Form -->
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form action="/contact" method="post">
+                        <div class="form-row">
+                            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" id="cemail" placeholder="Email" required>
+                            <input type="tel" name="phone" id="uphone" placeholder="Phone" required>
+                        </div>
+                        <textarea name="message" id="message" rows="5" placeholder="How can we help?" required></textarea>
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+                </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <!-- Right: Info -->
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa fa-phone"></i> +91 937 393 7166</p>
+                    <p><i class="fa fa-envelope"></i> hubverse@gmail.com</p>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
-                <p>
-                    <ul>
-                        <li><span>Email:</span> nitishkumarsingh123@gmail.com</li>
-                        <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/nitishkumarsingh123/" target="_blank">https://www.linkedin.com/in/nitishkumarsingh123/</a></li>
-                        <li><span>GitHub:</span> <a href="https://github.com/nitishkumarsingh123" target="_blank">https://github.com/nitishkumarsingh123</a></li>
-                    </ul>
-                </p>
-            </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+        </div>
         </section>
     </main>
 
