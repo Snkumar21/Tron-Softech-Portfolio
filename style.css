@@ -247,6 +247,7 @@ body {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .contact-form input,
@@ -255,7 +256,7 @@ body {
             border-radius: 8px;
             border: none;
             font-size: 16px;
-            width: 100%;
+            width: 90%;
             outline: none;
             background: white;
             color: #111;
