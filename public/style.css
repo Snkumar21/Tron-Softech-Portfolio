@@ -15,6 +15,7 @@ header{
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 header h2{
@@ -43,32 +44,34 @@ header h2 span{
 
 /* Main Content */
 main{
-    padding: 20px;
     justify-items: center;
 }
 
 /* Intro */
 .intro{
-    background-color: #111;
+    background-image: linear-gradient(180deg, rgba(81, 81, 81, 0.31), rgba(0, 0, 0, 0.9)), url('./Img/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 20px;
-    width: 80%;
-    border-radius: 15px;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 .intro img{
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
     object-fit: cover;
     justify-content: center;
-    padding-left: 10%;
+    margin-left: 10%;
 }
 
 .intro-text{
     padding-left: 10%;
     text-align: center;
+    margin-top: 10%;
 }
 
 .intro h2{
@@ -80,7 +83,7 @@ main{
 
 .intro p{
     margin: 3px;
-    color: #bbb;
+    color: #ddd;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -125,6 +128,24 @@ main{
 .about h3{
     color: #ffb5b5;
     cursor: pointer;
+}
+
+.content {
+    display: flex;
+}
+
+.about-img{
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.content-text{
+    width: 60%;
+    padding-left: 5%;
+    margin-top: -0.1%;
 }
 
 .about ul{
