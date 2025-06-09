@@ -314,16 +314,21 @@ main{
 }
 
 .skills-list li {
+    width: 100px;
+    height: 100px;
     background-color: #1a1a1a;
     border: 1px solid #ffb5b5;
     color: #fff;
-    padding: 0.6rem 1.2rem;
+    padding: 2rem;
     border-radius: 20px;
     font-size: 0.95rem;
     white-space: nowrap;
     transition: background 0.3s, transform 0.2s;
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skills-list li:hover {
@@ -331,6 +336,17 @@ main{
     border: 1px solid #fff;
     color: #000;
     transform: scale(1.05);
+}
+
+.skills-list li i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.skills-list li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 /* Projects Section*/
