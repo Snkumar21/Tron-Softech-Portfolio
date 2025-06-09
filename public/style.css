@@ -28,6 +28,12 @@ header h2{
     margin-left: 15px;
 }
 
+header h2:hover{
+    color: #fff;
+    text-decoration: 2px underline #ff4141c8;
+    text-underline-offset: 4px;
+}
+
 header h2 span{
     color: #fff;
 }
@@ -41,7 +47,7 @@ header h2 span{
 }
 
 .nav a:hover{
-    color: #ffb5b5;
+    color: red;
 }
 
 /* Main Content */
@@ -80,9 +86,15 @@ main{
 
 .intro h2{
     margin: 2px;
-    color: #ffb5b5;
+    color: #ff4141c8;
     font-size: 4rem;
     cursor: pointer;
+}
+
+.intro h2:hover {
+    color: #fff;
+    text-decoration: 2px underline #ff4141c8;
+    text-underline-offset: 4px;
 }
 
 .intro p{
@@ -106,8 +118,7 @@ main{
 }
 
 .intro button:hover{
-    background-color: #ffb5b5;
-    color: #000;
+    background-color: #ff4141c8;
 }
 
 /* About Section */
@@ -118,10 +129,16 @@ main{
 }
 
 .about h2{
-    color: #ffb5b5;
+    color: #ff4141c8;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.about h2:hover {
+    color: #fff;
+    text-decoration: 2px underline #ff4141c8;
+    text-underline-offset: 8px;
 }
 
 .about p{
@@ -130,7 +147,7 @@ main{
 }
 
 .about h3{
-    color: #ffb5b5;
+    color: #ff4141c8;
     cursor: pointer;
 }
 
@@ -159,7 +176,7 @@ main{
 }
 
 .about ul li span{
-    color: #ffb5b5;
+    color: #ff4141c8;
     font-weight: bold;
     text-decoration: underline 1px #fff;
     text-underline-offset: 2px;
@@ -174,10 +191,16 @@ main{
 }
 
 .featured h2{
-    color: #ffb5b5;
+    color: #ff4141c8;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.featured h2:hover {
+    color: #fff;
+    text-decoration: 2px underline #ff4141c8;
+    text-underline-offset: 8px;
 }
 
 .featured p {
@@ -199,7 +222,7 @@ main{
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    border: 2px solid #ffb5b5;
+    border: 2px solid #ff4141c8;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
 }
@@ -233,7 +256,7 @@ main{
 .featured-overlay h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: #ffb5b5;
+    color: #ff4141c8;
     text-align: left;
 }
 
@@ -247,7 +270,7 @@ main{
 
 .featured-overlay a {
     display: inline-block;
-    background-color: #ffb5b5;
+    background-color: #ff4141c8;
     color: #000;
     padding: 5px 12px;
     border-radius: 5px;
@@ -263,10 +286,16 @@ main{
 }
 
 .skills h2 {
-    color: #ffb5b5;
+    color: #ff4141c8;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.skills h2:hover {
+    color: #fff;
+    text-decoration: 2px underline #ff4141c8;
+    text-underline-offset: 8px;
 }
 
 .skills p {
@@ -284,21 +313,25 @@ main{
 }
 
 #skills h3 {
-    color: #ffb5b5;
+    color: #ff4141c8;
     font-size: 1.6rem;
     margin: 2.5rem 0 1rem 0;
-    border-bottom: 2px solid #ffb5b5;
+    border-bottom: 2px solid #ff4141c8;
     padding-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
 }
 
+#skills h3:hover {
+    color: #fff;
+}
+
 .skill-category h4 {
-    color: #ffb5b5;
+    color: #ff4141c8;
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    border-left: 4px solid #ffb5b5;
+    border-left: 4px solid #ff4141c8;
     padding-left: 15px;
     margin-left: 10px;
     cursor: pointer;
@@ -317,7 +350,7 @@ main{
     width: 100px;
     height: 100px;
     background-color: #1a1a1a;
-    border: 1px solid #ffb5b5;
+    border: 1px solid #ff4141c8;
     color: #fff;
     padding: 2rem;
     border-radius: 20px;
@@ -332,7 +365,7 @@ main{
 }
 
 .skills-list li:hover {
-    background: #ffb5b5;
+    background: #ff4141c8;
     border: 1px solid #fff;
     color: #000;
     transform: scale(1.05);
@@ -355,10 +388,16 @@ main{
 }
 
 .projects h2{
-    color: #ffb5b5;
+    color: #ff4141c8;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.projects h2:hover {
+    color: #fff;
+    text-decoration: 2px underline #ff4141c8;
+    text-underline-offset: 12px;
 }
 
 .projects p{
@@ -377,7 +416,7 @@ main{
     background: #1a1a1a;
     border-radius: 10px;
     overflow: hidden;
-    border-left: 4px solid #ffb5b5;
+    border-left: 4px solid #ff4141c8;
     transition: transform 0.3s;
     justify-items: center;
     padding-bottom: 20px;
@@ -391,7 +430,7 @@ main{
     width: 100%;
     aspect-ratio: 4 / 2;
     object-fit: cover;
-    border-bottom: 2px solid #ffb5b5;
+    border-bottom: 2px solid #ff4141c8;
 }
 
 .project-card h3 {
@@ -414,7 +453,7 @@ main{
 }
 
 .project-card .view-project:hover {
-    background: #ffb5b5;
+    background: #ff4141c8;
     color: #000;
 }
 
@@ -426,10 +465,16 @@ main{
 }
 
 .contact h2{
-    color: #ffb5b5;
+    color: #ff4141c8;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.contact h2:hover {
+    color: #fff;
+    text-decoration: 2px underline #ff4141c8;
+    text-underline-offset: 12px;
 }
 
 .contact-content {
@@ -453,7 +498,7 @@ main{
 .contact-info h3 {
     font-size: 22px;
     margin-bottom: 20px;
-    color: #ffb5b5;
+    color: #ff4141c8;
 }
 
 .contact-form form {
@@ -494,7 +539,7 @@ main{
 }
 
 .contact-form button:hover {
-    background-color: #ffb5b5;
+    background-color: #ff4141c8;
     color: #000;
 }
 
@@ -505,7 +550,7 @@ main{
 
 .contact-info i {
     margin-right: 20px;
-    color: #ffb5b5;
+    color: #ff4141c8;
     font-size: 20px;
     margin-top: 15px;
 }
