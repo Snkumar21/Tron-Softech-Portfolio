@@ -1,5 +1,5 @@
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     /* Header */
     header {
         flex-direction: column;
