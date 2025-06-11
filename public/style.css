@@ -717,7 +717,7 @@ footer p{
 
     .nav {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .nav a {
