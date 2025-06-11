@@ -44,3 +44,18 @@ navLinks.forEach(link => {
         link.classList.add('active');
     });
 });
+
+// Typing Text Scripting
+const text = "Hi, I'm Nitish Kumar Singh";
+const typingText = document.getElementById("typing-text");
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        typingText.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100); // typing speed
+    }
+}
+
+window.onload = typeWriter;

@@ -132,6 +132,17 @@ main{
     text-underline-offset: 4px;
 }
 
+#typing-text::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+    color: #ff4141c8;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 .intro p{
     margin: 3px;
     color: #ddd;
