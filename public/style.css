@@ -717,11 +717,11 @@ footer p{
 
     .nav {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .nav a {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .mobile-hide {
