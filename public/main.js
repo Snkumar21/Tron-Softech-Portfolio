@@ -34,3 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch((error) => console.error('Error:', error));
     });
 });
+
+// Active-link Scripting
+const navLinks = document.querySelectorAll('.link-active');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+    });
+});

@@ -52,6 +52,30 @@ header h2 span{
     color: red;
 }
 
+.link-active {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    margin-right: 40px;
+}
+
+.link-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: #ff4141c8;
+    transition: width 0.3s ease-in-out;
+}
+
+.link-active.active::after {
+    width: 100%;
+}
+
 /* Main Content */
 main{
     justify-items: center;
@@ -677,7 +701,7 @@ footer p{
     }
 
     .nav a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .mobile-hide {
