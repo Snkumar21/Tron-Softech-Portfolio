@@ -1,3 +1,5 @@
+/* PC Responsive */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -169,10 +171,18 @@ main{
     margin-top: -0.1%;
 }
 
+.content-text h3 {
+    font-size: 1.8rem;
+}
+
+.content-text p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 .about ul{
     color: #eee;
     list-style-type: circle;
-    list-style-position: inside;
 }
 
 .about ul li span{
@@ -367,19 +377,56 @@ main{
 .skills-list li:hover {
     background: #ff4141c8;
     border: 1px solid #fff;
-    color: #000;
+    color: #fff;
     transform: scale(1.05);
 }
 
 .skills-list li i {
     font-size: 50px;
     margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+.skills-list li i:hover {
+    animation: twist 2s ease-in-out infinite;
 }
 
 .skills-list li img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+.skills-list li img:hover {
+    animation: twist 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes twist {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 /* Projects Section*/
@@ -540,7 +587,6 @@ main{
 
 .contact-form button:hover {
     background-color: #ff4141c8;
-    color: #000;
 }
 
 .contact-info p {
@@ -566,4 +612,168 @@ footer{
 footer p{
     margin: 0;
     color: #fff;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .intro img {
+        width: 350px;
+        height: 350px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .intro-text {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img, .content-text {
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .featured-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h2 {
+        font-size: 1.7rem;
+        margin-left: 5px;
+        margin-bottom: 4px;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-size: 0.8rem;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .intro h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .intro img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .intro button {
+        width: 150px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .about {
+        margin: 5%;
+    }
+
+    .about h2, .featured h2, .skills h2, .projects h2, .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    .featured-gallery {
+        margin: 0;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .featured-item {
+        width: 90%;
+        height: auto;
+    }
+
+    .featured-item img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        list-style: none;
+        padding-left: 0;
+        justify-content: center;
+        max-width: 900px;
+        margin: auto;  
+    }
+
+    .skills-list li {
+        width: 80px;
+        height: 80px;
+        padding: 1rem;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        transition: background 0.3s, transform 0.2s;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects {
+        margin: 5%;
+    }
+
+    .project-card {
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        margin: 5%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
