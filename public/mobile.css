@@ -8,6 +8,8 @@
         position: sticky;
         bleed: 0;
         z-index: 1000;
+        text-align: center;
+        align-content: center;
     }
 
     header h2 {
@@ -59,6 +61,7 @@
 
     .about h2, .featured h2, .skills h2, .projects h2, .contact h2 {
         font-size: 2rem;
+        text-align: center;
     }
 
     .content img {
@@ -76,7 +79,7 @@
 
     /* Featured Section */
     .featured p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-align: center;
     }
 
@@ -140,8 +143,15 @@
         margin: 5%;
     }
 
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .project-card {
         margin-bottom: 10px;
+        width: 90%;
     }
 
     /* Contact Section */
