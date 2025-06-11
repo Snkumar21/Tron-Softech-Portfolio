@@ -76,6 +76,15 @@ header h2 span{
     width: 100%;
 }
 
+section, 
+.about, 
+.featured, 
+.skills, 
+.projects, 
+.contact {
+    scroll-margin-top: 100px;
+}
+
 /* Main Content */
 main{
     justify-items: center;
