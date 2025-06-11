@@ -1,9 +1,13 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    /* Header */
     header {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
+        position: sticky;
+        bleed: 0;
+        z-index: 1000;
     }
 
     header h2 {
@@ -25,8 +29,10 @@
         display: none !important;
     }
 
+    /* Main Section */
     .intro h2 {
         font-size: 2rem;
+        text-align: center;
     }
 
     .intro p {
@@ -50,6 +56,11 @@
 
     .about h2, .featured h2, .skills h2, .projects h2, .contact h2 {
         font-size: 2.2rem;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
     }
 
     .featured-gallery {
