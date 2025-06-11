@@ -12,6 +12,7 @@ body {
 
 /* Header */
 header{
+    width: 100%;
     background-color: #333;
     padding: 10px;
     display: flex;
@@ -699,125 +700,5 @@ footer p{
         flex-direction: column;
         width: 100%;
         margin-left: 0;
-    }
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header h2 {
-        font-size: 1.7rem;
-        margin-left: 5px;
-        margin-bottom: 4px;
-    }
-
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .nav a {
-        font-size: 0.65rem;
-    }
-
-    .mobile-hide {
-        display: none !important;
-    }
-
-    .intro h2 {
-        font-size: 2.3rem;
-    }
-
-    .intro p {
-        font-size: 1.1rem;
-    }
-
-    .intro img {
-        width: 280px;
-        height: 280px;
-    }
-
-    .intro button {
-        width: 150px;
-        height: 45px;
-        font-size: 1rem;
-    }
-
-    .about {
-        margin: 5%;
-    }
-
-    .about h2, .featured h2, .skills h2, .projects h2, .contact h2 {
-        font-size: 2.2rem;
-    }
-
-    .featured-gallery {
-        margin: 0;
-        gap: 30px;
-        padding: 20px;
-    }
-
-    .featured-item {
-        width: 90%;
-        height: auto;
-    }
-
-    .featured-item img {
-        height: 250px;
-        width: 350px;
-    }
-
-    .skills {
-        text-align: center;
-    }
-
-    .skills-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        list-style: none;
-        padding-left: 0;
-        justify-content: center;
-        max-width: 900px;
-        margin: auto;  
-    }
-
-    .skills-list li {
-        width: 80px;
-        height: 80px;
-        padding: 1rem;
-        font-size: 0.8rem;
-        white-space: nowrap;
-        transition: background 0.3s, transform 0.2s;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .projects {
-        margin: 5%;
-    }
-
-    .project-card {
-        margin-bottom: 10px;
-    }
-
-    .contact {
-        margin: 5%;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-
-    footer p {
-        font-size: 14px;
     }
 }
