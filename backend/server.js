@@ -9,10 +9,14 @@ const PORT = process.env.PORT || 3001;
 
 // MySQL Database Connection
 const db = mysql.createConnection({
-    host: process.env.DB_HOST || "localhost" || "db4free.net",
-    user: process.env.DB_USER || "root" || "snkumar",
-    password: process.env.DB_PASSWORD || "Snkumar30",
-    database: process.env.DB_NAME || "portfolio_db",
+    host: process.env.DB_HOST || "localhost" || "mysql.railway.internal",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "Snkumar30" || "RsbZvXkOVrsTFBCtEDsnVMVvdKuULqhE",
+    database: process.env.DB_NAME || "portfolio_db" || "railway",
+    port: 3306,
+    ssl: {
+        rejectUnauthorized: false // Required for Railway
+    }
 });
 
 app.use(express.static(path.join(__dirname, "../public")));
