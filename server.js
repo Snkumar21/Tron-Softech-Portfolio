@@ -16,6 +16,7 @@ const db = mysql.createConnection({
 
 app.use(express.static(path.join(__dirname, "public")));
 
+// MySQL Connection Check
 db.connect(err => {
     if (err) {
         console.error('Error connecting to MySQL:', err);
@@ -25,7 +26,7 @@ db.connect(err => {
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json()); // For parsing JSON bodies
+app.use(bodyParser.json());
 
 // User Contact Form
 app.post("/contact", (req, res) => {
