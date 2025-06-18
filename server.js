@@ -43,7 +43,7 @@ app.post("/contact", (req, res) => {
     });
 });
 
-// Serve static HTML files
+// Serve static files
 app.get("/index", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"));
 });
