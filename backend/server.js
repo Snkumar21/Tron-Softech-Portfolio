@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 3001;
 
 // MySQL Database Connection
 const db = mysql.createConnection({
-    host: process.env.DB_HOST || "localhost",
-    user: process.env.DB_USER || "root",
+    host: process.env.DB_HOST || "localhost" || "db4free.net",
+    user: process.env.DB_USER || "root" || "snkumar",
     password: process.env.DB_PASSWORD || "Snkumar30",
     database: process.env.DB_NAME || "portfolio_db",
 });
