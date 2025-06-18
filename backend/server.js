@@ -14,7 +14,7 @@ const db = mysql.createConnection({
     database: process.env.DB_NAME || "portfolio_db",
 });
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../public")));
 
 // MySQL Connection Check
 db.connect(err => {
