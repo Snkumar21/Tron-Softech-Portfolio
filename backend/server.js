@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 // MySQL Database Connection
 const db = mysql.createConnection({
@@ -49,6 +50,6 @@ app.get("/index", (req, res) => {
 });
 
 // Start the server
-app.listen(3001, () => {
-    console.log("Server is running on http://localhost:3001");
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
