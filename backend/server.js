@@ -15,7 +15,7 @@ const db = mysql.createConnection({
     database: process.env.DB_NAME || "portfolio_db" || "railway",
     port: 3306,
     ssl: {
-        rejectUnauthorized: false // Required for Railway
+        rejectUnauthorized: false
     }
 });
 

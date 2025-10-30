@@ -340,18 +340,12 @@
                 <!-- Left: Form -->
                 <div class="contact-form">
                     <h3>Send a Message</h3>
-                    <form action="/contact" id="contactForm" method="post">
-                        <div class="form-row">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <input type="email" name="email" id="cemail" placeholder="Your Email" required>
-                            <input type="tel" name="phone" id="uphone" placeholder="Your Phone" required>
-                        </div>
-                        <div class="form-row">
-                            <textarea name="message" id="message" rows="5" placeholder="How can we help?" required></textarea>
-                        </div>
-                        <button type="submit" id="submit">Submit</button>
+                    <form action="https://formspree.io/f/xvgvbanr" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                        <textarea name="message" placeholder="How can we help?" required></textarea>
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
 
@@ -378,5 +372,8 @@
     </footer>
 
     <script src="main.js"></script>
+    
+    <!-- ✅ EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>
